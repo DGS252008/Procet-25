@@ -8,7 +8,7 @@ class Bin{
         this.width = width;
         this.height = height;
 
-        this.body = Bodies.rectangle(this.x, this,y, this.width, this.height, options);
+        this.body = Bodies.rectangle(this.x, this.y, this.width, this.height, options);
         this.image = loadImage("trashbin.png")
         World.add(world, this.body);
     }
@@ -17,7 +17,7 @@ class Bin{
         var pos = this.body.position;
 
         push();
-        translate(this.x, this.y);
+        translate(pos.x, pos.y);
         rectMode(CENTER);
         //fill("silver");
         image(this.image, 0, 0, pos.x, pos.y);

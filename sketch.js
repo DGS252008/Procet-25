@@ -22,7 +22,8 @@ function setup() {
 	ground = new Ground(350, 680, 1400, 10);
 	trash = new Balls(40, 660 , 50);
 	
-	bin1 = new Bin(800, 672);
+	bin1 = new Bin(600, 400);
+	bin1.scale = 0.5
 
 	Engine.run(engine);
   
