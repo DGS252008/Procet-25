@@ -23,7 +23,7 @@ function setup() {
 	trash = new Balls(40, 660 , 50);
 	
 	bin1 = new Bin(800, 665, 150, 20);
-	bin2 = new Bin(720, 590, 20, 170);
+	bin2 = new Bin(720, 590, 10, 170);
 	bin3 = new Bin(880, 590, 20, 170);
 
 	Engine.run(engine);
@@ -48,7 +48,7 @@ function draw() {
 
 function keyPressed(){
 	if(keyCode === UP_ARROW){
-		Matter.Body.applyForce(trash.body, trash.body.position,{x:125, y:-150});
+		Matter.Body.applyForce(trash.body, trash.body.position,{x:130, y:-150});
 	}
 }
 
